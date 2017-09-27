@@ -32,9 +32,9 @@ This is a long description of the pod here. This is a long description of the po
 
   #s.ios.source_files = 'ALSAlipay/Classes/**/*.{h}'
   #s.ios.public_header_files = 'ALSAlipay/Classes/**/*.{h}'
-  s.vendored_frameworks = 'ALSAlipay/Classes/*.{framework}'
-  s.resources = 'ALSAlipay/Assets/*.{png,jpg,bundle}'
+  s.vendored_frameworks = 'ALSAlipay/Classes/*.framework'
+  s.resources = 'ALSAlipay/Assets/*.bundle'
   s.frameworks = 'SystemConfiguration','CoreTelephony','CoreMotion'
-  s.ios.libraries = 'c++.1','z.1.2.8'
+  s.libraries = 'c++.1','z.1.2.8'
 
 end
