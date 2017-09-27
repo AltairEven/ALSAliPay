@@ -18,17 +18,21 @@
   "platforms": {
     "ios": "8.0"
   },
-  "frameworks": [
-    "SystemConfiguration",
-    "CoreTelephony",
-    "CoreMotion"
-  ],
   "ios": {
-    "vendored_frameworks": "ALSAlipay/Classes/*.{framework}",
+    "public_header_files": [
+      "ALSAlipay/Frameworks/**/*.{h}",
+      "ALSAlipay/Classes/**/*.{h}"
+    ],
+    "vendored_frameworks": "ALSAlipay/Frameworks/*.{framework}",
     "resources": "ALSAlipay/Assets/*.{png,jpg,bundle}",
     "libraries": [
       "c++.1",
       "z.1.2.8"
     ]
-  }
+  },
+  "frameworks": [
+    "SystemConfiguration",
+    "CoreTelephony",
+    "CoreMotion"
+  ]
 }

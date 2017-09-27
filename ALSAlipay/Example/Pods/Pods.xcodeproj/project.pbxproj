@@ -18,6 +18,7 @@
 /* Begin PBXFileReference section */
 		02E11E21B4BC7A001FCFD0F046ACAC43 /* Pods-ALSAlipay_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ALSAlipay_Tests-umbrella.h"; sourceTree = "<group>"; };
 		140BE3EA05E6118265AB6CC9786E75ED /* Pods-ALSAlipay_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ALSAlipay_Example-dummy.m"; sourceTree = "<group>"; };
+		1EFB721E39DBE9B95BED6C6E72AB5D48 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlipaySDK.framework; path = ALSAlipay/Frameworks/AlipaySDK.framework; sourceTree = "<group>"; };
 		2C9D1B283A30D6E544DBC93B414E6A62 /* Pods-ALSAlipay_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ALSAlipay_Tests-dummy.m"; sourceTree = "<group>"; };
 		3327F01D569FB02F170771DD94B653A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45E545D0B3E8B23A2DEFA87DFC09AD2A /* Pods-ALSAlipay_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ALSAlipay_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -35,10 +36,9 @@
 		AFB8EF4FBEEA0958676E3A4BB8590162 /* Pods-ALSAlipay_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ALSAlipay_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CE10D583EB741192612B3E4FF4087DA6 /* Pods-ALSAlipay_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ALSAlipay_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D04D3C114D507E0F832E4C94600725CD /* Pods-ALSAlipay_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ALSAlipay_Example-resources.sh"; sourceTree = "<group>"; };
-		D1EDE32F750A334FA0F2BEAB0C68F9E5 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlipaySDK.framework; path = ALSAlipay/Classes/AlipaySDK.framework; sourceTree = "<group>"; };
+		D282FEB3CCF5791578284271EBDA32FB /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UTDID.framework; path = ALSAlipay/Frameworks/UTDID.framework; sourceTree = "<group>"; };
 		D75D57D6BE15D451BD43E5BD94C521C2 /* Pods-ALSAlipay_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ALSAlipay_Example-umbrella.h"; sourceTree = "<group>"; };
 		D9EA0988D4A0EC8C2D971792F2B975D9 /* Pods-ALSAlipay_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ALSAlipay_Tests-resources.sh"; sourceTree = "<group>"; };
-		DF603B84DE5A8F06CC94DFC26F15C7C6 /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UTDID.framework; path = ALSAlipay/Classes/UTDID.framework; sourceTree = "<group>"; };
 		E5047E169F26C65A88ACFE8F0B592520 /* Pods_ALSAlipay_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALSAlipay_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5320860ECBD23F492D66338A06C3C01 /* Pods_ALSAlipay_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALSAlipay_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF9C6ED4DF9584B4C7DA60B84C3FE03 /* AlipaySDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
@@ -65,6 +65,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BCF4CEB774758F77C5EEDDB5DB9DE08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EFB721E39DBE9B95BED6C6E72AB5D48 /* AlipaySDK.framework */,
+				D282FEB3CCF5791578284271EBDA32FB /* UTDID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		252C761010A08DC2058DDFE91B6B2F7D /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,7 +86,7 @@
 		436A19792DDD7BA437125170CDC86043 /* ALSAlipay */ = {
 			isa = PBXGroup;
 			children = (
-				6D1D2D6C41E379F3CABC4FED140D925F /* Frameworks */,
+				0BCF4CEB774758F77C5EEDDB5DB9DE08 /* Frameworks */,
 				DACFF710A7E394366F4C697DB12464B2 /* Resources */,
 			);
 			name = ALSAlipay;
@@ -90,15 +99,6 @@
 				F6F5FAAEAD5CA554BAD8A33635DD3CCB /* Assets */,
 			);
 			path = ALSAlipay;
-			sourceTree = "<group>";
-		};
-		6D1D2D6C41E379F3CABC4FED140D925F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D1EDE32F750A334FA0F2BEAB0C68F9E5 /* AlipaySDK.framework */,
-				DF603B84DE5A8F06CC94DFC26F15C7C6 /* UTDID.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		6DEB6074907167848A88DE182FA2D359 /* Development Pods */ = {

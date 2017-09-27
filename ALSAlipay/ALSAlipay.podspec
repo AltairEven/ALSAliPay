@@ -30,8 +30,8 @@ This is a long description of the pod here. This is a long description of the po
 
   s.ios.deployment_target = '8.0'
 
-  #s.ios.source_files = 'ALSAlipay/Classes/**/*.{h}'
-  #s.ios.public_header_files = 'ALSAlipay/Classes/**/*.{h}'
+  #s.ios.source_files = 'ALSAlipay/Classes/**/*.{h,m}'
+  s.ios.public_header_files = 'ALSAlipay/Frameworks/**/*.{h}','ALSAlipay/Classes/**/*.{h}'
   s.ios.vendored_frameworks = 'ALSAlipay/Frameworks/*.{framework}'
   s.ios.resources = 'ALSAlipay/Assets/*.{png,jpg,bundle}'
   s.frameworks = 'SystemConfiguration','CoreTelephony','CoreMotion'
