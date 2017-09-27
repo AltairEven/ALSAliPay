@@ -37,10 +37,10 @@ This is a long description of the pod here. This is a long description of the po
   s.frameworks = 'SystemConfiguration','CoreTelephony','CoreMotion'
   s.ios.libraries = 'c++.1','z.1.2.8'
    
-  #s.pod_target_xcconfig = {
-  #      'FRAMEWORK_SEARCH_PATHS'   => '$(inherited) $(PODS_ROOT)/**',
-  #      'OTHER_LDFLAGS'            => '$(inherited) -undefined dynamic_lookup -ObjC',
-  #      'ENABLE_BITCODE'           => 'NO'
-  #}
+  s.pod_target_xcconfig = {
+        'FRAMEWORK_SEARCH_PATHS'   => '$(inherited) $(PODS_ROOT)/**',
+        'OTHER_LDFLAGS'            => '$(inherited) -undefined dynamic_lookup -ObjC',
+        'ENABLE_BITCODE'           => 'NO'
+  }
 
 end
