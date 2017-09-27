@@ -33,9 +33,10 @@ This is a long description of the pod here. This is a long description of the po
   s.source_files = 'ALSAlipay/Frameworks/**/*.{h}'
   s.ios.public_header_files = 'ALSAlipay/Frameworks/**/*.{h}'
   s.ios.vendored_frameworks = 'ALSAlipay/Frameworks/*.{framework}'
-  s.weak_framework = 'UTDID'
-  s.ios.resources = 'ALSAlipay/Assets/*.{png,jpg,bundle}'
-  s.frameworks = 'SystemConfiguration','CoreTelephony','CoreMotion'
+  s.ios.resources = 'ALSAlipay/Assets/*.{png,jpg,bundle}','ALSAlipay/Frameworks/UTDID.framework'
+  s.frameworks = 'SystemConfiguration','CoreTelephony','CoreMotion','UTDID'
   s.ios.libraries = 'c++.1','z.1.2.8'
+
+  s.xcconfig = { 'LD_RUNPATH_SEARCH_PATHS' => '"$(PODS_ROOT)/UTDID/Frameworks"' }
 
 end
