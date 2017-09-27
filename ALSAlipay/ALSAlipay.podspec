@@ -34,9 +34,7 @@ This is a long description of the pod here. This is a long description of the po
   s.ios.public_header_files = 'ALSAlipay/Frameworks/**/*.{h}'
   s.ios.vendored_frameworks = 'ALSAlipay/Frameworks/*.{framework}'
   s.ios.resources = 'ALSAlipay/Assets/*.{png,jpg,bundle}'
-  s.frameworks = 'SystemConfiguration','CoreTelephony','CoreMotion'
-  s.ios.libraries = 'c++.1','z.1.2.8'
-  #s.preserve_paths = 'ALSAlipay/Frameworks/*.framework'
-  #s.xcconfig = { 'OTHER_LDFLAGS' => '-framework AlipaySDK -framework UTDID' }
+  #s.frameworks = 'SystemConfiguration','CoreTelephony','CoreMotion'
+  #s.ios.libraries = 'c++.1','z.1.2.8'
 
 end
