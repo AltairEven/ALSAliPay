@@ -40,6 +40,7 @@ This is a long description of the pod here. This is a long description of the po
   s.pod_target_xcconfig = {
         'FRAMEWORK_SEARCH_PATHS'   => '$(inherited) $(PODS_ROOT)/**',
         'OTHER_LDFLAGS'            => '$(inherited) -undefined dynamic_lookup -ObjC',
+        'LD_RUNPATH_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/**',
         'ENABLE_BITCODE'           => 'NO'
   }
 
