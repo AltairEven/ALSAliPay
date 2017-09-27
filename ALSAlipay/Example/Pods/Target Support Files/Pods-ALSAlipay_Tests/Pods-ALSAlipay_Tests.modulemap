@@ -1,0 +1,6 @@
+framework module Pods_ALSAlipay_Tests {
+  umbrella header "Pods-ALSAlipay_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

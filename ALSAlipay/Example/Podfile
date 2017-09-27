@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ALSAlipay_Example' do
+  pod 'ALSAlipay', :path => '../'
+
+  target 'ALSAlipay_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
