@@ -32,15 +32,15 @@ This is a long description of the pod here. This is a long description of the po
 
   s.source_files = 'ALSAlipay/Frameworks/**/*.{h}'
   s.ios.public_header_files = 'ALSAlipay/Frameworks/**/*.{h}'
-  s.ios.vendored_frameworks = 'ALSAlipay/Frameworks/*.{framework}'
-  s.ios.resources = 'ALSAlipay/Assets/*.{png,jpg,bundle}'
-  s.frameworks = 'SystemConfiguration','CoreTelephony','CoreMotion'
-  s.ios.libraries = 'c++.1','z.1.2.8'
+  s.ios.vendored_frameworks = 'ALSAlipay/Frameworks/AlipaySDK.framework','ALSAlipay/Frameworks/UTDID.framework'
+  s.ios.resources = 'ALSAlipay/Assets/*.bundle'
+  s.frameworks = "Security","CoreMotion","CFNetwork","CoreTelephony","SystemConfiguration"
+  s.ios.libraries = 'z','c++'
    
   s.pod_target_xcconfig = {
         'FRAMEWORK_SEARCH_PATHS'   => '$(inherited) $(PODS_ROOT)/**',
         'OTHER_LDFLAGS'            => '$(inherited) -undefined dynamic_lookup -ObjC',
-        'LD_RUNPATH_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/**',
+        'LD_RUNPATH_SEARCH_PATHS' => '$(inherited) @loader_path/../Frameworks',
         'ENABLE_BITCODE'           => 'NO'
   }
 
