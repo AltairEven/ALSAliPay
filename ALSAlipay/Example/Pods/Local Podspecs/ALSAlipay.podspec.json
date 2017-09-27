@@ -21,16 +21,27 @@
   "source_files": "ALSAlipay/Frameworks/**/*.{h}",
   "ios": {
     "public_header_files": "ALSAlipay/Frameworks/**/*.{h}",
-    "vendored_frameworks": "ALSAlipay/Frameworks/*.{framework}",
-    "resources": "ALSAlipay/Assets/*.{png,jpg,bundle}",
+    "vendored_frameworks": [
+      "ALSAlipay/Frameworks/AlipaySDK.framework",
+      "ALSAlipay/Frameworks/UTDID.framework"
+    ],
+    "resources": "ALSAlipay/Assets/*.bundle",
     "libraries": [
-      "c++.1",
-      "z.1.2.8"
+      "z",
+      "c++"
     ]
   },
   "frameworks": [
-    "SystemConfiguration",
+    "Security",
+    "CoreMotion",
+    "CFNetwork",
     "CoreTelephony",
-    "CoreMotion"
-  ]
+    "SystemConfiguration"
+  ],
+  "pod_target_xcconfig": {
+    "FRAMEWORK_SEARCH_PATHS": "$(inherited) $(PODS_ROOT)/**",
+    "OTHER_LDFLAGS": "$(inherited) -undefined dynamic_lookup -ObjC",
+    "LD_RUNPATH_SEARCH_PATHS": "$(inherited) @loader_path/../Frameworks",
+    "ENABLE_BITCODE": "NO"
+  }
 }
