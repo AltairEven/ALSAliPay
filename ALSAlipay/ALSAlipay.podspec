@@ -30,17 +30,11 @@ This is a long description of the pod here. This is a long description of the po
 
   s.ios.deployment_target = '8.0'
 
-  s.subspec 'Alipay' do |ap|
-  #ap.source_files = 'ALSAlipay/**/*.{h}'
-  #ap.ios.public_header_files = 'ALSAlipay/**/*.{h}'
-  ap.ios.vendored_frameworks = 'ALSAlipay/*.{framework}'
-  ap.ios.resources = 'ALSAlipay/Assets/**/*.{png,jpg,bundle}'
-  ap.frameworks = 'SystemConfiguration','CoreTelephony','CoreMotion'
-  ap.ios.libraries = 'c++.1','z.1.2.8'
-  
-  ap.subspec 'UTDID' do |ut|
-  ut.ios.vendored_frameworks = 'ALSAlipay/UTFramework/UTDID.framework'
-  end
-  end
+  s.source_files = 'ALSAlipay/Frameworks/**/*.{h}'
+  s.ios.public_header_files = 'ALSAlipay/Frameworks/**/*.{h}'
+  s.ios.vendored_frameworks = 'ALSAlipay/Frameworks/*.{framework}'
+  s.ios.resources = 'ALSAlipay/Assets/*.{png,jpg,bundle}'
+  s.frameworks = 'SystemConfiguration','CoreTelephony','CoreMotion'
+  s.ios.libraries = 'c++.1','z.1.2.8'
 
 end
