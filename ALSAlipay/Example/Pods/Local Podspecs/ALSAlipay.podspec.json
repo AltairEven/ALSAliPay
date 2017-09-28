@@ -18,30 +18,32 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "ALSAlipay/Frameworks/**/*.{h}",
-  "ios": {
-    "public_header_files": "ALSAlipay/Frameworks/**/*.{h}",
-    "vendored_frameworks": [
-      "ALSAlipay/Frameworks/AlipaySDK.framework",
-      "ALSAlipay/Frameworks/UTDID.framework"
-    ],
-    "resources": "ALSAlipay/Assets/*.bundle",
-    "libraries": [
-      "z",
-      "c++"
-    ]
-  },
-  "frameworks": [
-    "Security",
-    "CoreMotion",
-    "CFNetwork",
-    "CoreTelephony",
-    "SystemConfiguration"
-  ],
-  "pod_target_xcconfig": {
-    "FRAMEWORK_SEARCH_PATHS": "$(inherited) $(PODS_ROOT)/**",
-    "OTHER_LDFLAGS": "$(inherited) -undefined dynamic_lookup -ObjC",
-    "LD_RUNPATH_SEARCH_PATHS": "$(inherited) @loader_path/../Frameworks",
-    "ENABLE_BITCODE": "NO"
-  }
+  "subspecs": [
+    {
+      "name": "Alipay",
+      "source_files": "ALSAlipay/Frameworks/**/*.{h}",
+      "ios": {
+        "public_header_files": "ALSAlipay/Alipay/**/*.{h}",
+        "vendored_frameworks": "ALSAlipay/Alipay/*.{framework}",
+        "resources": "ALSAlipay/Assets/*.{png,jpg,bundle}",
+        "libraries": [
+          "c++.1",
+          "z.1.2.8"
+        ]
+      },
+      "frameworks": [
+        "SystemConfiguration",
+        "CoreTelephony",
+        "CoreMotion"
+      ],
+      "subspecs": [
+        {
+          "name": "UTDID",
+          "ios": {
+            "vendored_frameworks": "ALSAlipay/UTDID/*.{framework}"
+          }
+        }
+      ]
+    }
+  ]
 }

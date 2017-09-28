@@ -1,16 +1,20 @@
 PODS:
-  - ALSAlipay (0.0.1)
+  - ALSAlipay (0.0.1):
+    - ALSAlipay/Alipay (= 0.0.1)
+  - ALSAlipay/Alipay (0.0.1):
+    - ALSAlipay/Alipay/UTDID (= 0.0.1)
+  - ALSAlipay/Alipay/UTDID (0.0.1)
 
 DEPENDENCIES:
   - ALSAlipay (from `../`)
 
 EXTERNAL SOURCES:
   ALSAlipay:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  ALSAlipay: 98eaa39efc79af9b7f8a07aa2d58210b1e195e16
+  ALSAlipay: f0fb7e70968544f59961c23a2be4890361ea81db
 
 PODFILE CHECKSUM: 8c4a430ea67a6a9c9450f9524dd4aad6db9caf5d
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.4.0.beta.1
