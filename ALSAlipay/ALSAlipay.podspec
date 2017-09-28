@@ -31,7 +31,7 @@ This is a long description of the pod here. This is a long description of the po
   s.ios.deployment_target = '8.0'
 
   s.subspec 'Alipay' do |ap|
-  ap.source_files = 'ALSAlipay/**/*.{h}'
+  #ap.source_files = 'ALSAlipay/**/*.{h}'
   #ap.ios.public_header_files = 'ALSAlipay/**/*.{h}'
   ap.ios.vendored_frameworks = 'ALSAlipay/*.{framework}'
   ap.ios.resources = 'ALSAlipay/Assets/*.{png,jpg,bundle}'
