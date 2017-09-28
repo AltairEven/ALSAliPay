@@ -21,7 +21,7 @@
   "subspecs": [
     {
       "name": "Alipay",
-      "source_files": "ALSAlipay/Frameworks/**/*.{h}",
+      "source_files": "ALSAlipay/Alipay/**/*.{h}",
       "ios": {
         "public_header_files": "ALSAlipay/Alipay/**/*.{h}",
         "vendored_frameworks": "ALSAlipay/Alipay/*.{framework}",
@@ -35,15 +35,15 @@
         "SystemConfiguration",
         "CoreTelephony",
         "CoreMotion"
-      ],
-      "subspecs": [
-        {
-          "name": "UTDID",
-          "ios": {
-            "vendored_frameworks": "ALSAlipay/UTDID/*.{framework}"
-          }
-        }
       ]
+    },
+    {
+      "name": "UTDID",
+      "source_files": "ALSAlipay/UTDID/**/*.{h}",
+      "ios": {
+        "public_header_files": "ALSAlipay/UTDID/**/*.{h}",
+        "vendored_frameworks": "ALSAlipay/UTDID/*.{framework}"
+      }
     }
   ]
 }
