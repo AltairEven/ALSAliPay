@@ -39,7 +39,7 @@ This is a long description of the pod here. This is a long description of the po
   ap.ios.libraries = 'c++.1','z.1.2.8'
   
   ap.subspec 'UTDID' do |ut|
-  ut.ios.vendored_frameworks = 'ALSAlipay/UTDID.framework'
+  ut.ios.vendored_frameworks = 'ALSAlipay/UTFramework/**/*.framework'
   end
   end
 
