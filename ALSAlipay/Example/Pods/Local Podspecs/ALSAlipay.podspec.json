@@ -21,10 +21,10 @@
   "subspecs": [
     {
       "name": "Alipay",
-      "source_files": "ALSAlipay/Alipay/**/*.{h}",
+      "source_files": "ALSAlipay/APFramework/**/*.{h}",
       "ios": {
-        "public_header_files": "ALSAlipay/Alipay/**/*.{h}",
-        "vendored_frameworks": "ALSAlipay/Alipay/*.{framework}",
+        "public_header_files": "ALSAlipay/APFramework/**/*.{h}",
+        "vendored_frameworks": "ALSAlipay/APFramework/*.{framework}",
         "resources": "ALSAlipay/Assets/*.{png,jpg,bundle}",
         "libraries": [
           "c++.1",
@@ -39,10 +39,10 @@
     },
     {
       "name": "UTDID",
-      "source_files": "ALSAlipay/UTDID/**/*.{h}",
+      "source_files": "ALSAlipay/APFramework/**/*.{h}",
       "ios": {
-        "public_header_files": "ALSAlipay/UTDID/**/*.{h}",
-        "vendored_frameworks": "ALSAlipay/UTDID/*.{framework}"
+        "public_header_files": "ALSAlipay/APFramework/**/*.{h}",
+        "vendored_frameworks": "ALSAlipay/APFramework/*.{framework}"
       }
     }
   ]

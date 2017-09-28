@@ -3,6 +3,8 @@ use_frameworks!
 target 'ALSAlipay_Example' do
   pod 'ALSAlipay', :path => '../'
 
+  pod  'UTDID', :source => "http://repo.baichuan-ios.taobao.com/baichuanSDK/AliBCSpecs.git"
+
   target 'ALSAlipay_Tests' do
     inherit! :search_paths
 

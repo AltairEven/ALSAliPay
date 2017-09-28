@@ -1,8 +1,8 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../ALSAlipay/Alipay" "${PODS_ROOT}/../../ALSAlipay/UTDID"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../ALSAlipay/APFramework" "${PODS_ROOT}/UTDID"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ALSAlipay"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ALSAlipay" "${PODS_ROOT}/Headers/Public/UTDID"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited)  -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/ALSAlipay"
+OTHER_CFLAGS = $(inherited)  -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/ALSAlipay" -isystem "${PODS_ROOT}/Headers/Public/UTDID"
 OTHER_LDFLAGS = $(inherited) -l"c++.1" -l"z.1.2.8" -framework "CoreMotion" -framework "CoreTelephony" -framework "SystemConfiguration"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
