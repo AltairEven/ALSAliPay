@@ -1,0 +1,16 @@
+PODS:
+  - ALSAlipay (0.0.1)
+
+DEPENDENCIES:
+  - ALSAlipay (from `../`)
+
+EXTERNAL SOURCES:
+  ALSAlipay:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ALSAlipay: 71b7ff1c33dd351c436ff5721a8d7d60a89f8e37
+
+PODFILE CHECKSUM: 8c4a430ea67a6a9c9450f9524dd4aad6db9caf5d
+
+COCOAPODS: 1.4.0.beta.1
