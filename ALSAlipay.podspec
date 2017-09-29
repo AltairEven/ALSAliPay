@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ALSAlipay'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'This is a short description of ALSAlipay.'
 
 # This description is used to generate tags and improve search results.
@@ -30,8 +30,8 @@ This is a long description of the pod here. This is a long description of the po
 
   s.ios.deployment_target = '8.0'
 
-  #s.source_files = 'ALSAlipay/Frameworks/**/*.{h}'
-  #s.ios.public_header_files = 'ALSAlipay/Frameworks/**/*.{h}'
+  s.source_files = 'ALSAlipay/Frameworks/**/*.{h}'
+  s.ios.public_header_files = 'ALSAlipay/Frameworks/**/*.{h}'
   s.ios.vendored_frameworks = 'ALSAlipay/Frameworks/*.{framework}'
   s.ios.resources = 'ALSAlipay/Assets/*.{png,jpg,bundle}'
   s.frameworks = 'SystemConfiguration','CoreTelephony','CoreMotion'
